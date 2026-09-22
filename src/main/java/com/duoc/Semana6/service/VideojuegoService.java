@@ -42,7 +42,7 @@ public class VideojuegoService {
     public ArrayList<Videojuego> listarVideojuegoPlataforma(String plataforma){
         String normalizedPlataforma = plataforma.toLowerCase();
         ArrayList<Videojuego> allVideogameWithPlatform = new ArrayList<>();
-        allVideogameWithPlatform = videojuegoRepository.findallByPlataforma(normalizedPlataforma);
+        allVideogameWithPlatform = videojuegoRepository.findAllByPlataforma(normalizedPlataforma);
         return allVideogameWithPlatform;
     }
 }

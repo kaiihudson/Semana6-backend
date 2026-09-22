@@ -14,5 +14,5 @@ public interface VideojuegoRepository extends JpaRepository<Videojuego, Integer>
 
     Optional<Videojuego> findByTitulo(String normalizedTitulo);
 
-    ArrayList<Videojuego> findallByPlataforma(String normalizedPlataforma);
+    ArrayList<Videojuego> findAllByPlataforma(String normalizedPlataforma);
 }
