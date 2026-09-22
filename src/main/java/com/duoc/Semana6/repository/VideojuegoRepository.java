@@ -2,7 +2,6 @@ package com.duoc.Semana6.repository;
 
 import com.duoc.Semana6.model.Videojuego;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

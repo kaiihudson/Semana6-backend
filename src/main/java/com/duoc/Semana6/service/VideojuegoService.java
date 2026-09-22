@@ -15,9 +15,7 @@ public class VideojuegoService {
 
 
     public ArrayList<Videojuego> listarVideojuegos() {
-        ArrayList<Videojuego> allVideogames = new ArrayList<>();
-        allVideogames = (ArrayList<Videojuego>) videojuegoRepository.findAll();
-        return allVideogames;
+        return (ArrayList<Videojuego>) videojuegoRepository.findAll();
     }
 
     public Videojuego buscarVideojuegoId(int id){
@@ -41,8 +39,6 @@ public class VideojuegoService {
 
     public ArrayList<Videojuego> listarVideojuegoPlataforma(String plataforma){
         String normalizedPlataforma = plataforma.toLowerCase();
-        ArrayList<Videojuego> allVideogameWithPlatform = new ArrayList<>();
-        allVideogameWithPlatform = videojuegoRepository.findAllByPlataforma(normalizedPlataforma);
-        return allVideogameWithPlatform;
+        return videojuegoRepository.findAllByPlataforma(normalizedPlataforma);
     }
 }
